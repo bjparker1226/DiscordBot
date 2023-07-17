@@ -10,6 +10,7 @@ token = open('data/token.txt').readline()
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+    await client.change_presence(status=discord.Status.invisible)
 
 
 @client.event
